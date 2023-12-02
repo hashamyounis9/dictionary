@@ -2,12 +2,12 @@
 
 {% block body %}
     
-    <ol>
+    <ol style="font-family: sans-serif;">
         {% for word_info in database %}
-            <li>
+            <li >
             <strong>{{ word_info['word'] }}</strong> <br>
             English meaning: {{ word_info['english_meaning'] }} <br>
-            Urdu Meaning: {{ word_info['urdu_meaning'] }} {# urdu_meaning #} <br>
+            <span >Urdu Meaning: {{ word_info['urdu_meaning'] }}</span> {# urdu_meaning #} <br>
             Primary Meaning: {{ word_info['primary_meaning'] }} {# primary_meaning #} <br>
             Secenday Meaning: {{ word_info['secondary_meaning'] }} {# secondary_meaning #} <br>
             Tertiary Meaning: {{ word_info['tertiary_meaning'] }} {# tertiary_meaning #} <br>
